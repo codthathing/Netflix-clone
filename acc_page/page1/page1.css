@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+#header {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+} 
+
+#topHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.serIcon {
+    background: none;
+}
+
+#serAccDiv {
+    display: flex;
+    align-items: center;
+    background: none;
+}
+
+#botHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.botItem {
+    list-style: none;
+    font-weight: 300;
+    background: none;
+}
+
+.secHead {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.movDiv {
+    display: grid;
+}
+
+#movDowDiv {
+    background: url("images/Netflix-green.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: grid;
+}
+
+#setDiv {
+    background: none;
+    justify-self: start;
+    align-self: end;
+}
+
+.setIcon {
+    justify-self: end;
+    align-self: start;
+    background: none;
+}
+
+#setText {
+    color: rgb(170, 170, 170);
+    background: none;
+}
+
+.movImg {
+    width: 100%;
+    border: 1px solid white;
+}
+
+#navDiv {
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navItem {
+    text-align: center;
+    list-style: none;
+    font-weight: 300;
+    background: none;
+    color: rgb(43, 40, 40);
+}
+
+.navIcon {
+    background: none;
+}
+
+.navText {
+    text-transform: capitalize;
+    background: none;
+    color: rgb(170, 170, 170);
+}
+
+#searchDiv {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    color: white;
+    z-index: 100;
+    display: none;
+}
+
+#searchDiv.openSearchDiv {
+    display: block;
+}
+
+#navNavigateDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navSearchDiv {
+    display: grid;
+    background-color: rgb(49, 49, 49);
+}
+
+.navSearchBtns {
+    background-color: rgb(49, 49, 49);
+    color: rgb(170, 170, 170);
+}
+
+#navSearchField {
+    background-color: rgb(49, 49, 49);
+    border: none;
+    outline: none;
+}
+
+.searchedMovieDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moveDescDiv {
+    display: flex;
+    align-items: center;
+}
+
+.movieName {
+    text-transform: capitalize;
+}
+
+
+
+@media all and (max-width: 767px) {
+
+    #netLogo {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #topHead {
+        padding: 1rem 1rem 0 0.5rem;
+    }
+
+    #serAccDiv {
+        gap: 2rem;
+    }
+
+    .serIcon {
+        font-size: 1.5rem;
+    }
+
+    .serIcon:nth-child(2), .serText {
+        display: none;
+    }
+
+    #accPro {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 0.25rem;
+    }
+
+    #botHead {
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    .botItem {
+        font-size: 1rem;
+    }
+
+    .sections {
+        margin: 2rem 0.5rem;
+    }
+
+    #section-1 {
+        margin-top: 10rem;
+    }
+
+    .sections:nth-child(4) {
+        margin-bottom: 5rem;
+    }
+
+    .secHead {
+        font-size: 1.15rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .movDiv {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0.75rem;
+    }
+
+    #movDowDiv {
+        height: 10rem;
+        border-radius: 0.5rem;
+        padding: 0.75rem;
+        grid-column: 1 / span 2;
+    }
+
+    .setIcon {
+        font-size: 1.5rem;
+    }
+
+    #setText {
+        font-size: 1rem;
+    }
+
+    .movImgDiv-1:nth-child(3), .movImgDiv-1:nth-child(4), .movImgDiv-1:nth-child(5) {
+        display: none;
+    }
+
+    .movImgDiv:nth-child(4), .movImgDiv:nth-child(5) {
+        display: none;
+    }
+
+    .movImg {
+        height: 10rem;
+        border-radius: 0.5rem;
+    }
+
+    #navDiv {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .navIcon {
+        font-size: 1.5rem;
+    }
+
+    .navText {
+        font-size: 0.65rem;
+        margin-top: 0.25rem;
+    }
+
+    #botHeadDesk {
+        display: none;
+    }
+
+    .watBar {
+        display: none;
+    }
+
+    #navNavigateDiv {
+        padding: 1.5rem 1.25rem 1rem 1.25rem;
+    }
+
+    #navBackBtn {
+        font-size: 1.5rem;
+    }
+
+    #navSearchDiv {
+        grid-template-columns: 10% 80% 10%;
+        padding: 1rem;
+    }
+
+    .navSearchBtns {
+        font-size: 1.5rem;
+    }
+
+    #navSearchField {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    #searchEntriesDiv {
+        padding: 1rem 1.5rem 0.25rem 0.5rem;
+    }
+
+    #entryTitle {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .searchedMovieDiv {
+        margin-bottom: 0.25rem;
+    }
+
+    .moveDescDiv {
+        gap: 0.5rem;
+    }
+
+    .movieImage {
+        height: 5rem;
+        width: 9rem;
+        border-radius: 0.5rem;
+    }
+
+    .movieName {
+        font-size: 1rem;
+    }
+    
+    .playBtn {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    #netLogo {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #topHead {
+        padding: 1rem 1.5rem 0 1rem;
+    }
+
+    #serAccDiv {
+        gap: 3rem;
+    }
+
+    .serIcon {
+        font-size: 2.5rem;
+    }
+
+    .serIcon:nth-child(2), .serText {
+        display: none;
+    }
+
+    #accPro {
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 0.5rem;
+    }
+
+    #botHead {
+        padding: 1.5rem 4rem 1.5rem 4rem;
+    }
+
+    .botItem {
+        font-size: 1.5rem;
+    }
+
+    .sections {
+        margin: 3.5rem 1rem;
+    }
+
+    #section-1 {
+        margin-top: 15rem;
+    }
+
+    .sections:nth-child(4) {
+        margin-bottom: 7.5rem;
+    }
+
+    .secHead {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .movDiv {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    #movDowDiv {
+        height: 12.5rem;
+        border-radius: 0.75rem;
+        padding: 1rem;
+        grid-column: 1 / span 2;
+    }
+
+    .setIcon {
+        font-size: 2.5rem;
+    }
+
+    #setText {
+        font-size: 1.5rem;
+    }
+
+    .movImgDiv-1:nth-child(4), .movImgDiv-1:nth-child(5) {
+        display: none;
+    }
+
+    .movImgDiv:nth-child(5) {
+        display: none;
+    }
+
+    .movImg {
+        height: 12.5rem;
+        border-radius: 0.75rem;
+    }
+
+    #navDiv {
+        padding: 1rem 2rem;
+    }
+
+    .navIcon {
+        font-size: 2.5rem;
+    }
+
+    .navText {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    #botHeadDesk {
+        display: none;
+    }
+
+    .watBar {
+        display: none;
+    }
+
+    #navNavigateDiv {
+        padding: 2rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    #navBackBtn {
+        font-size: 2.5rem;
+    }
+
+    #navSearchDiv {
+        grid-template-columns: 10% 80% 10%;
+        padding: 1.5rem 1.25rem;
+    }
+
+    .navSearchBtns {
+        font-size: 2.5rem;
+    }
+
+    #navSearchField {
+        font-size: 1.5rem;
+        margin-right: 3rem;
+    }
+
+    #searchEntriesDiv {
+        padding: 1.5rem 2.5rem 1rem 1rem;
+    }
+
+    #entryTitle {
+        font-size: 2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .searchedMovieDiv {
+        margin-bottom: 0.5rem;
+    }
+
+    .moveDescDiv {
+        gap: 1rem;
+    }
+
+    .movieImage {
+        height: 7.5rem;
+        width: 12.5rem;
+        border-radius: 0.5rem;
+    }
+
+    .movieName {
+        font-size: 1.5rem;
+    }
+    
+    .playBtn {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+
+@media all and (min-width: 1024px) {
+    #botHead {
+        display: none;
+    }
+
+    #topHead {
+        padding: 1.5rem 2rem;
+    }
+
+    #netLogo {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #mainCartDesk {
+        display: flex;
+        gap: 2.5rem;
+        align-items: center;
+        background: none;
+    }
+
+    #botHeadDesk {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        background: none;
+    }
+
+    .botItem {
+        font-size: 1.25rem;
+    }
+
+    #serAccDiv {
+        gap: 2rem;
+    }
+
+    .serIcon {
+        font-size: 2rem;
+    }
+
+    .serText {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+
+    #accPro {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 0.25rem;
+    }
+
+    .sections {
+        margin: 0 2rem 3.5rem 2rem;
+    }
+
+    .sections:nth-child(4) {
+        margin-bottom: 1rem;
+    }
+
+    #section-1 {
+        margin-top: 10rem;
+    }
+
+    .secHead {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .movDiv {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 0.5rem;
+    }
+
+    #movDowDiv {
+        height: 12.5rem;
+        border-radius: 0.5rem;
+        padding: 0.75rem;
+    }
+
+    .setIcon {
+        font-size: 2rem;
+    }
+
+    #setText {
+        font-size: 1.25rem;
+    }
+
+    .movImg {
+        height: 12.5rem;
+        border-radius: 0.5rem;
+    }
+
+    .watBar {
+        padding: 0.125rem;
+        width: 75%;
+        border-radius: 1rem;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #navDiv{
+        display: none;
+    }
+}

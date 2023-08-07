@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/netflix.png" type="image/x-icon">
+    <title>Netflix clone</title>
+</head>
+<body>
+
+    <div id="preDiv">
+        <img src="images/netflix_load.gif" id="pre-load" alt="">
+    </div>
+
+    <section id="body">
+        <nav id="header">
+            <h1 id="logo">NETFLIX</h1>
+            <i id="editIcon"><i class="fa-solid fa-pen"></i></i>
+        </nav>
+
+        <main id="logDiv">
+            <p id="whoTop">Who's Watching?</p>
+            <section id="accLogDiv">
+                <a href="acc_page/page1/page1.html" style="text-decoration: none;">
+                    <div class="accDiv">
+                        <img src="images/Netflix-green.png" alt="" class="accImg">
+                        <p class="accName">Acc 1</p>
+                    </div>
+                </a>
+                <a href="acc_page/page2/page2.html" style="text-decoration: none;">
+                    <div class="accDiv">
+                        <img src="images/Netflix-blue.png" alt="" class="accImg">
+                        <p class="accName">Acc 2</p>
+                    </div>
+                </a>
+            </section>
+        </main>
+    </section>
+
+
+    <script>
+        window.addEventListener("load", ()=> {
+            setTimeout(()=> {
+                document.getElementById("preDiv").style.display = "none"
+                document.getElementById("header").style.position = "absolute"
+                document.getElementById("logDiv").style.position = "absolute"
+            }, 2350)
+        })
+    </script>
+</body>
+</html>

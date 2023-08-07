@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#preDiv {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+#header {
+    right: 0;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    color: red;
+    font-weight: bold;
+}
+
+#editIcon {
+    font-weight: bold;
+}
+
+#logDiv {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: fit-content;
+    text-align: center;
+    padding: 1rem;
+}
+
+#accLogDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+
+
+@media all and (max-width: 767px) {
+    #header {
+        padding: 1.5rem 1rem;
+    }
+
+    #logo {
+        font-size: 2rem;
+    }
+
+    #editIcon {
+        font-size: 2.5rem;
+    }
+
+    #logDiv {
+        width: 80%;
+    }
+
+    #whoTop {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #accLogDiv {
+        grid-gap: 2rem;
+    }
+
+    .accImg {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 0.25rem;
+        margin-bottom: 1rem;
+    }
+    
+    .accName {
+        font-size: 0.75rem;
+    }
+} 
+
+
+
+
+
+@media all and (min-width: 767px) and (max-width: 1023px) {
+    #header {
+        padding: 2.5rem 2rem;
+    }
+
+    #logo {
+        font-size: 3rem;
+    }
+
+    #editIcon {
+        font-size: 3.5rem;
+    }
+
+    #logDiv {
+        width: 80%;
+    }
+
+    #whoTop {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .accImg {
+        width: 12.5rem;
+        height: 12.5rem;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .accName {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+@media all and (min-width: 1024px) {
+    #header {
+        padding: 2rem;
+        width: 60%;
+    }
+
+    #logo {
+        font-size: 2.5rem;
+    }
+
+    #editIcon {
+        font-size: 2.5rem;
+    }
+
+    #logDiv {
+        width: 80%;
+    }
+
+    #whoTop {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    #accLogDiv {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accImg {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .accName {
+        font-size: 1rem;
+    }
+}
