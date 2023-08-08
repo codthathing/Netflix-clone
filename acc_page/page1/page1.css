@@ -54,7 +54,7 @@
 }
 
 #movDowDiv {
-    background: url("images/Netflix-green.png");
+    background: url("images/mosul.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -80,7 +80,6 @@
 
 .movImg {
     width: 100%;
-    border: 1px solid white;
 }
 
 #navDiv {
@@ -142,6 +141,10 @@
     color: rgb(170, 170, 170);
 }
 
+.navSearchBtns2 {
+    text-align: end;
+}
+
 #navSearchField {
     background-color: rgb(49, 49, 49);
     border: none;
@@ -163,6 +166,13 @@
     text-transform: capitalize;
 }
 
+#iniSearch {
+    font-style: italic;
+    color: rgb(170, 170, 170);
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
 
 
 @media all and (max-width: 767px) {
@@ -182,6 +192,10 @@
 
     .serIcon {
         font-size: 1.5rem;
+    }
+
+    .serIcon2 {
+        display: none;
     }
 
     .serIcon:nth-child(2), .serText {
@@ -274,7 +288,7 @@
     }
 
     #navNavigateDiv {
-        padding: 1.5rem 1.25rem 1rem 1.25rem;
+        padding: 2rem 1rem 1rem 1rem;
     }
 
     #navBackBtn {
@@ -292,7 +306,6 @@
 
     #navSearchField {
         font-size: 1rem;
-        margin-right: 1rem;
     }
 
     #searchEntriesDiv {
@@ -325,6 +338,10 @@
     .playBtn {
         font-size: 1.5rem;
     }
+
+    #iniSearch {
+        font-size: 1rem;
+    }
 }
 
 
@@ -347,6 +364,10 @@
 
     .serIcon {
         font-size: 2.5rem;
+    }
+
+    .serIcon2 {
+        display: none;
     }
 
     .serIcon:nth-child(2), .serText {
@@ -457,7 +478,6 @@
 
     #navSearchField {
         font-size: 1.5rem;
-        margin-right: 3rem;
     }
 
     #searchEntriesDiv {
@@ -489,6 +509,10 @@
     
     .playBtn {
         font-size: 2.5rem;
+    }
+
+    #iniSearch {
+        font-size: 2rem;
     }
 }
 
@@ -600,5 +624,65 @@
 
     #navDiv{
         display: none;
+    }
+
+    #navNavigateDiv {
+        padding: 1.5rem 2rem 1rem 2rem;
+    }
+
+    #navBackBtn {
+        font-size: 2rem;
+    }
+
+    #navSearchDiv {
+        grid-template-columns: 10% 80% 10%;
+        padding: 1rem 1.5rem;
+    }
+
+    .navSearchBtns {
+        font-size: 2rem;
+    }
+
+    .navSearchBtns2 {
+        text-align: end;
+    }
+
+    #navSearchField {
+        font-size: 1.25rem;
+    }
+
+    #searchEntriesDiv {
+        padding: 1.5rem 3.5rem 1rem 1rem;
+    }
+
+    #entryTitle {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .searchedMovieDiv {
+        margin-bottom: 0.5rem;
+    }
+
+    .moveDescDiv {
+        gap: 0.75rem;
+    }
+
+    .movieImage {
+        height: 5rem;
+        width: 10rem;
+        border-radius: 0.5rem;
+    }
+
+    .movieName {
+        font-size: 1.25rem;
+    }
+    
+    .playBtn {
+        font-size: 2rem;
+    }
+
+    #iniSearch {
+        font-size: 1.25rem;
     }
 }
