@@ -25,7 +25,7 @@ function shiftText(textBox) {
         textDiv += `
             <div class="searchedMovieDiv">
                 <div class="moveDescDiv">
-                    <img src="images/laptop_main.jpg" alt="" class="movieImage">
+                    <img src="images/purple.jpeg" alt="" class="movieImage">
                     <p class="movieName">${textBox[x].text}</p>
                 </div>
                 <p><i class="fa-regular fa-circle-play playBtn"></i></p>
