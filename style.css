@@ -20,7 +20,6 @@
 
 #header {
     right: 0;
-    width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,6 +58,7 @@
 @media all and (max-width: 767px) {
     #header {
         padding: 1.5rem 1rem;
+        width: 75%;
     }
 
     #logo {
@@ -66,7 +66,7 @@
     }
 
     #editIcon {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     #logDiv {
@@ -101,45 +101,7 @@
 @media all and (min-width: 767px) and (max-width: 1023px) {
     #header {
         padding: 2.5rem 2rem;
-    }
-
-    #logo {
-        font-size: 3rem;
-    }
-
-    #editIcon {
-        font-size: 2rem;
-    }
-
-    #logDiv {
-        width: 80%;
-    }
-
-    #whoTop {
-        font-size: 2rem;
-        margin-bottom: 2.5rem;
-    }
-
-    .accImg {
-        width: 12.5rem;
-        height: 12.5rem;
-        border-radius: 0.5rem;
-        margin-bottom: 2rem;
-    }
-    
-    .accName {
-        font-size: 1.5rem;
-    }
-}
-
-
-
-
-
-@media all and (min-width: 1024px) {
-    #header {
-        padding: 2rem;
-        width: 60%;
+        width: 65%;
     }
 
     #logo {
@@ -156,6 +118,45 @@
 
     #whoTop {
         font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .accImg {
+        width: 12.5rem;
+        height: 12.5rem;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .accName {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+@media all and (min-width: 1024px) {
+    #header {
+        padding: 2rem;
+        width: 60%;
+    }
+
+    #logo {
+        font-size: 2rem;
+    }
+
+    #editIcon {
+        font-size: 1.25rem;
+    }
+
+    #logDiv {
+        width: 80%;
+    }
+
+    #whoTop {
+        font-size: 1.25rem;
         margin-bottom: 2.5rem;
     }
 
